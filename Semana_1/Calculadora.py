@@ -1,0 +1,8 @@
+numero1=input("Escribe un numero:")
+numero2=input("Escribe otro numero:")
+numero1real=int(numero1)
+numero2real=int(numero2)
+print("La suma da:", numero1real+numero2real)
+print("La resta da:", numero1real-numero2real)
+print("La multiplicacion da:", numero1real*numero2real)
+print("La division da:", numero1real/numero2real)

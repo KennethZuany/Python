@@ -1,0 +1,5 @@
+print("Maybe it was my fault making you believe my highlights started at the free throw line, not in the gym")
+print("Some people want it to happen, some wish it would happen, other make it happen")
+print("I've failed over and over and over again in my life. And that's why I succeed")
+print(12+11)
+print(23+22)
