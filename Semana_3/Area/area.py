@@ -3,7 +3,7 @@ from funciones import *
 # Programa
 while opcion != "4" :
     mostrar_menu ( )
-    opcion = input ( "Seleccione una opción: " )
+    opcion = input ( "\n \nSeleccione una opción: " )
 
     if opcion == "1" :
         resultado = area_cuadrado ( )
