@@ -30,24 +30,26 @@ def gasto_dispositivo ( dispositivos , costo_kwh ) :
    if encontrados :
        print ( "\n- - - Dispositivo encontrado - - - ")
        for c in encontrados :
-           print ( "Dispositivo:" , c [ 0 ] , "| Consumo (W):" , c [ 1 ] , "| Uso (H):" , c [ 2 ] )
-           consumo_total = int ( c [ 1 ] ) * int ( c [ 2 ] )
-           consumo_mensual, costo_mensual = calcular_kwh_mes ( c [ 1 ] , c [ 2 ] , costo_kwh)
-           print ( "Dispositivo:" , c [ 0 ] , "| Consumo mensual:" , round ( consumo_mensual ) , "kWh" , "| Costo mensual:" , round ( costo_mensual ) , "pesos" )
-           print ( "El consumo total del dispositivo es:" , round ( consumo_total )  , "Wh" )
+           print("\n- - - Resultados del dispositivo - - -")
+       print ( "Nombre\t\tConsumo mensual (kWh)\tCosto mensual (pesos)" )
+       for c in encontrados :
+            consumo_mensual , costo_mensual = calcular_kwh_mes ( c [ 1 ] , c [ 2 ] , costo_kwh )
+            print( c [ 0 ] , "\t\t" , round ( consumo_mensual) , "kWh\t\t" , round ( costo_mensual ) , "pesos" ) 
    else : 
     print ( "\n - - - Dispositivo no encontrado - - - \n")
 
 # Consumo de todos los dispositivos 
 def consumo_total ( dispositivos , costo_kwh ) :
-    print ( "\n- - - Consumo de todos los dispositivos - - - \n" )  
+    print ( "\n- - - Consumo de todos los dispositivos - - - \n" ) 
+    print ( "Nombre\t\tConsumo mensual (kWh)\tCosto mensual (pesos)" ) 
     total_kwh = 0
     total_costo = 0
     for d in dispositivos :
         consumo_mensual , costo_mensual = calcular_kwh_mes ( d [ 1 ] , d [ 2 ] , costo_kwh )
-        print ( "Dispositivo:" , d [ 0 ] , "| Consumo mensual:" , round ( consumo_mensual ) , "kWh" , "| Costo mensual:" , round ( costo_mensual ) , "pesos" )
+        print ( d [ 0 ] , "\t\t" , round ( consumo_mensual ) , "kWh\t\t", round ( costo_mensual ) , "pesos" )
         total_kwh += consumo_mensual
         total_costo += costo_mensual
+    print ( "\n - - - Totales - - - " )
     print ( "\nConsumo total mensual:" , round ( total_kwh ) , "kWh" )
     print ( "Costo total mensual:" , round ( total_costo ) , "pesos" )
     return total_kwh, total_costo
