@@ -11,7 +11,7 @@ def agregar_dispositivo ( dispositivos ) :
     print ( "\n- - - Agregar dispositivo - - -" )
     dispositivo = input ( "Nombre del dispositivo: " )
     consumo = float ( input ( "Consumo del dispositivo (W): " ) )
-    uso = float ( input ( "Uso diario (H): " ) )
+    uso = float ( input ( "Uso diario (h): " ) )
     dispositivos.append ( [dispositivo , consumo , uso ] )
     print ( "\n- - - Dispositivo agregado exitosamente - - - " )
 
@@ -34,7 +34,7 @@ def gasto_dispositivo ( dispositivos , costo_kwh ) :
        print ( "Nombre\t\tConsumo mensual (kWh)\tCosto mensual (pesos)" )
        for c in encontrados :
             consumo_mensual , costo_mensual = calcular_kwh_mes ( c [ 1 ] , c [ 2 ] , costo_kwh )
-            print( c [ 0 ] , "\t\t" , round ( consumo_mensual) , "kWh\t\t" , round ( costo_mensual ) , "pesos" ) 
+            print( c [ 0 ] , "\t\t" , round ( consumo_mensual , 2 ) , "kWh\t\t" , round ( costo_mensual , 2 ) , "pesos" ) 
    else : 
     print ( "\n - - - Dispositivo no encontrado - - - \n")
 
@@ -46,12 +46,12 @@ def consumo_total ( dispositivos , costo_kwh ) :
     total_costo = 0
     for d in dispositivos :
         consumo_mensual , costo_mensual = calcular_kwh_mes ( d [ 1 ] , d [ 2 ] , costo_kwh )
-        print ( d [ 0 ] , "\t\t" , round ( consumo_mensual ) , "kWh\t\t", round ( costo_mensual ) , "pesos" )
+        print ( d [ 0 ] , "\t\t" , round ( consumo_mensual , 2 ) , "kWh\t\t", round ( costo_mensual , 2 ) , "pesos" )
         total_kwh += consumo_mensual
         total_costo += costo_mensual
     print ( "\n - - - Totales - - - " )
-    print ( "\nConsumo total mensual:" , round ( total_kwh ) , "kWh" )
-    print ( "Costo total mensual:" , round ( total_costo ) , "pesos" )
+    print ( "\nConsumo total mensual:" , round ( total_kwh , 2 ) , "kWh" )
+    print ( "Costo total mensual:" , round ( total_costo , 2 ) , "pesos" )
     return total_kwh, total_costo
         
 
@@ -77,4 +77,4 @@ while opcion != "4" :
     elif opcion == "4" :
         salir ( )
     else :
-        print ( "\n \n - - - Opción no valida. Ingrese una opción valida - - - \n \n" )
+        print ( "\n \n - - - Opción no válida. Ingrese una opción válida - - - \n \n" )
