@@ -45,4 +45,3 @@ def salir ( ) :
 # Variable y lista
 agenda = [ ]
 opcion = ""
-bucle = 0
