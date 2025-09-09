@@ -2,7 +2,6 @@ from funciones import *
 
 # Programa
 while opcion != "4" :
-    print ( "Opción no valida. Ingrese una opción valida.")
     mostrar_menu ( )
     opcion = input ( "Seleccione una opción: " )
 
