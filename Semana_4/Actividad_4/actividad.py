@@ -122,7 +122,7 @@ biblioteca = [ { "Título" : str , "Autor" : str , "Año" : int , "Género" : st
 opcion = opcion_menu ( )
 
 while opcion != "6" :
-    fecha ()
+    fecha ( )
     menu ( )
     fecha ( fecha_registro )
     if opcion == "1" :
