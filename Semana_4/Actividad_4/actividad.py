@@ -29,7 +29,7 @@ def registrar_libro ( biblioteca , fecha_registro ) :
 def consultar_libros ( biblioteca ) :
     print ( "\n\n - - - Consultar biblioteca - - - \n" )
     if biblioteca :
-        print ( f"{'Título'} {'Autor'} {'Año'} {'Género'} {'Fecha de registro (DD, MM, YYYY)'}" )
+        print ( f"{'Título'}| \t {'Autor'}| \t {'Año'}| \t {'Género'}| \t {'Fecha de registro (DD, MM, YYYY)'}" )
         print ( "-" * 100 )
         for libro in biblioteca :
             print ( f"{libro['Título']} {libro['Autor']} {libro['Año']} {libro['Género']} {libro['Fecha de registro (DD, MM, YYYY)']}" )
