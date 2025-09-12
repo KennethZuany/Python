@@ -99,7 +99,7 @@ def eliminar_libro ( biblioteca ) :
         print ( "-" * 130 )
     return biblioteca
 
-# Ver estadísticas (Total de libros, autor con más publicaciones, género más frecuente)
+# Ver estadísticas
 def estadisticas ( biblioteca ) :
     print ( "-" * 130 )
     print ( "\n - - - Estadísticas de la Biblioteca - - - \n" )
