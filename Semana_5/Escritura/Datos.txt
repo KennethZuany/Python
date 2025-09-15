@@ -1,0 +1,3 @@
+Hola, jorge 
+Estamos escribiendo en un archivo. Clase de programación
+Nueva linea 
