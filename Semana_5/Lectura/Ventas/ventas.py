@@ -74,7 +74,7 @@ def cliente ( ) :
 
 def salir ( ) :
     print ( "-" * 178 )
-    print ( "- - - Gracias por usar el gestor de ventas. ¡Hasta luego! - - -" )
+    print ( "\n\n- - - Gracias por usar el gestor de ventas. ¡Hasta luego! - - -\n\n" )
     print ( "-" * 178 )
     return
 
