@@ -65,7 +65,7 @@ def cliente ( ) :
             print ( f"{'Cliente':<30}{'Producto':<30}{'Monto':<10}" )
             for c in encontrados :
                 print ( f"{c [ 0 ]:<30}{c [ 1 ]:<30}{c [ 2 ]:<10}" )
-            print ( "-" * 178 )
+            print ( "-" * 70 )
         else :
             print ( "-" * 178 )
             print ( "- - - Cliente no encontrado. - - -" )

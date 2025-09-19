@@ -1,0 +1,8 @@
+Producto                       Cantidad (PZS)                 Precio unitario               
+----------------------------------------------------------------------------------------------------
+Xbox                           10                             $12000                         
+Playstation                    15                             $20000                         
+Laptop                         10                             $23000                         
+Monitor                        10                             $12000                         
+Playstation                    2                              $10000                         
+Monitos                        10                             $7000                          
